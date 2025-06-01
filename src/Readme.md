@@ -41,7 +41,7 @@ LocalStorage
 
 Installation
 
-git clone https://github.com/your-username/shoppyglobe.git
+git clone https://github.com/GangaPhanindraKumarGrandhi/Shoppy_Globe.git
 cd shoppyglobe
 npm install
 npm run dev
