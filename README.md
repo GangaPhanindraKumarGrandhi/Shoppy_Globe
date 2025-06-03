@@ -1,12 +1,47 @@
-# React + Vite
+ShoppyGlobe - E-commerce Application
+A responsive e-commerce web application built with React, Redux Toolkit, and React Router, allowing users to browse products, manage a shopping cart, and place orders with checkout.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
 
-Currently, two official plugins are available:
+Navigation with Home, Cart, and Checkout pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add-to-Cart and Buy Now functionality
 
-## Expanding the ESLint configuration
+Cart item quantity controls (+/-)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Dynamic total bill calculation
+
+Checkout with address form and validation
+
+Rating display using star icons
+
+Lazy loading and performance optimization
+
+Cart persists on page refresh using localStorage
+
+Product search
+
+Image loading feedback
+
+Graceful handling of API or image errors
+
+404 page for invalid routes
+
+Technology	
+
+HTML
+CSS
+JAVASCRIPT
+React
+Redux Toolkit
+React Router DOM
+Axios
+React Icons
+LocalStorage
+
+Installation
+
+git clone https://github.com/GangaPhanindraKumarGrandhi/Shoppy_Globe.git
+cd shoppyglobe
+npm install
+npm run dev
