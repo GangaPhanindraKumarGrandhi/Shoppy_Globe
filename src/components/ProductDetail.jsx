@@ -14,7 +14,7 @@ const ProductDetail = () => {
   const [imageError, setImageError] = useState(false);
   const [dataError, setDataError] = useState(null);
   useEffect(() => {
-    axios.get(`https://dummyjson.com/products/${id}`)
+    axios.get(`http://localhost:5000/products/${id}`)
       .then(res => setProduct(res.data))
       .catch(err => setDataError(err.message));
   }, [id]);
@@ -31,7 +31,7 @@ const ProductDetail = () => {
     dispatch(addToCart(product));
     navigate('/checkout');
   };
-  if (dataError) return <div>Error: {dataError}</div>;
+  if (dataError) return <div>Error: {`Hello${dataError}`}</div>;
   if (!product) return <div>Loading product details...</div>;
 // Shows product image, title, price, rating, and additional details
   return (

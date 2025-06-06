@@ -5,8 +5,8 @@ const useFetchProducts = () => {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
   useEffect(() => {
-    axios.get('https://dummyjson.com/products')
-      .then(res => setProducts(res.data.products))
+    axios.get('http://localhost:5000/products')
+      .then(res => setProducts(res.data))
       .catch(err => setError(err.message));
   }, []);
   console.log(products)

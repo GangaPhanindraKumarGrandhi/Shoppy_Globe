@@ -1,26 +1,36 @@
-// App.jsx
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import Header from './components/Header';
-// Sets up routing for the application using React Router
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ProductList = lazy(() => import('./components/ProductList'));
 const ProductDetail = lazy(() => import('./components/ProductDetail'));
 const Cart = lazy(() => import('./components/Cart'));
 const Checkout = lazy(() => import('./components/Checkout'));
 const NotFound = lazy(() => import('./components/NotFound'));
-// Loads components lazily using React.lazy and Suspense for better performance
+
+// Layout that includes Header only for valid pages
+const Layout = () => (
+  <>
+    <Header />
+    <Outlet />
+  </>
+);
 const App = () => (
   <BrowserRouter>
-    <Header />
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/" element={<ProductList />} />
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} /> {/* ✅ Add this line */}
+        <Route element={<Layout />}>
+          <Route path="/" element={<ProductList />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
+    <ToastContainer position="top-right" autoClose={2000} />
   </BrowserRouter>
 );
 
