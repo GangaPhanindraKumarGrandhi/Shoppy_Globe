@@ -139,13 +139,16 @@ In cartSlice.jsx, update the token used for API requests with the JWT token rece
 
 1. Sample MongoDB Screenshots to Include:
    MongoDB Compass - Database Overview
-
-   Shows your database with collections listed (e.g., products, cart, users).
-
+   ![Screenshot 2025-06-06 235028](https://github.com/user-attachments/assets/f4c03581-6dbc-4471-819d-4213613ef6cd)
+    Shows your database with collections listed (e.g., products, cart, users).
+   
    Products
+![Screenshot 2025-06-06 235048](https://github.com/user-attachments/assets/0cb48651-532b-4c87-82ce-ab41adc950ae)
 
    cart
+![Screenshot 2025-06-06 235040](https://github.com/user-attachments/assets/ba780223-8d5f-4fe9-96f9-7ff3025f08d9)
 
    users
+![Screenshot 2025-06-06 235057](https://github.com/user-attachments/assets/b29b9ab1-86b0-4cc9-8c6d-c41a446de84e)
 
    
