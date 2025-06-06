@@ -1,0 +1,71 @@
+# Backend Dependencies (Node.js)
+express
+cors
+mongoose
+axios
+jsonwebtoken
+bcryptjs
+dotenv
+nodemon  # for development only
+
+# Frontend Dependencies (React)
+react
+react-dom
+react-router-dom
+react-redux
+@reduxjs/toolkit
+axios
+react-toastify
+react-icons
+
+# Dev Tools
+vite or create-react-app  # depending on setup
+
+
+Suggested package.json (Backend Example)
+
+{
+  "name": "shoppyglobe-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
+
+ Suggested Frontend package.json (React App)
+
+ {
+  "name": "shoppyglobe-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.12.1",
+    "react-toastify": "^9.2.1",
+    "@reduxjs/toolkit": "^1.9.5"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
